@@ -5,10 +5,9 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MenuIcon, BellIcon, MessageCircleIcon, UserIcon, SearchIcon, XIcon, FacebookIcon, TwitterIcon, LinkedinIcon, GithubIcon } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
-import PlaceHolderImg from '../public/placeholder.svg'
+import { motion, AnimatePresence } from 'framer-motion' 
 import { useRouter } from 'next/navigation';
-
+import { UserRound } from 'lucide-react';
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -216,11 +215,12 @@ export default function LandingPage() {
                 <footer className="mt-8">
                   <div className="md:flex md:items-center md:justify-center">
                     <div className="md:flex-shrink-0">
-                      {/* <img
-                        className="mx-auto h-10 w-10 rounded-full"
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="User avatar"
-                      /> */}
+                      
+                      <p className="mx-auto mt-4 h-10 w-10 rounded-full">
+                      
+                      <UserRound/>
+
+                      </p>
                     </div>
                     <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                       <div className="text-base font-medium text-gray-900">Sarah Thompson</div>
