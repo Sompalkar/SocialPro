@@ -399,7 +399,7 @@ export default function ChatPage() {
   const handleFileUpload = (event: any) => {
     const file = event.target.files[0];
     if (file) {
-      // In a real app, you'd upload this file to your backend
+      // In a real app, you'd upload this file to your backend    
       console.log("Uploading file:", file.name);
     }
   };
