@@ -286,7 +286,7 @@ export default function ChatPage() {
                   </div>
                 </PopoverContent>
               </Popover>
-            </div>
+            </div>  
           </div>
 
           <div className=" ">
@@ -355,7 +355,7 @@ export default function ChatPage() {
                 <input
                   id="file-upload"
                   type="file"
-                  className="hidden"
+                  className="hidden" 
                   onChange={handleFileUpload}
                   multiple
                 />
